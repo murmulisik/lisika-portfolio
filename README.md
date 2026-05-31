@@ -1,25 +1,11 @@
-# lisika portfolio
+# lisika portfolio v2
 
-Готовый одностраничный сайт-портфолио.
+Портфолио Ларисы Киселёвой: digital-дизайн, дизайн соцсетей, UI-разборы и контент-дизайн.
 
-## Как открыть на Mac
+## Как обновить сайт на GitHub Pages
 
 1. Распакуйте архив.
-2. Откройте файл `index.html` двойным кликом.
-
-## Как загрузить на GitHub Pages
-
-1. Создайте репозиторий на GitHub, например `lisika-portfolio`.
-2. Загрузите туда все файлы из этой папки: `index.html`, `style.css`, `script.js`, папку `images`.
-3. Откройте Settings → Pages.
-4. В Source выберите `Deploy from a branch`.
-5. Branch: `main`, folder: `/root`.
-6. Нажмите Save.
-7. Через пару минут сайт будет доступен по ссылке вида:
-   `https://ваш-ник.github.io/lisika-portfolio/`
-
-## Что можно заменить
-
-- Фото: `images/profile.jpg`
-- Тексты: в `index.html`
-- Цвета: в начале `style.css`
+2. Откройте репозиторий `murmulisik/lisika-portfolio`.
+3. Замените старые файлы на новые: `index.html`, `style.css`, `script.js`, папку `images`.
+4. Нажмите **Commit changes**.
+5. GitHub Pages обновится через 1–3 минуты.

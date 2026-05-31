@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>lisika — портфолио digital-дизайнера</title>
-  <meta name="description" content="Портфолио Ларисы Киселёвой: digital-дизайн, визуалы для соцсетей, UI-разборы, карусели и креативные посты." />
+  <title>lisika — портфолио digital- и SMM-дизайнера</title>
+  <meta name="description" content="Портфолио Ларисы Киселёвой: digital- и SMM-дизайн, визуалы для соцсетей, UI-разборы и контент-дизайн." />
+  <meta property="og:title" content="lisika — digital- и SMM-дизайнер" />
+  <meta property="og:description" content="Визуалы для соцсетей, UI-разборы, карусели и креативные посты." />
+  <meta property="og:image" content="images/profile.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="noise"></div>
+  <div class="grain" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="logo" href="#top">lisika</a>
-    <nav>
+    <a class="logo" href="#top" aria-label="На главную"><span>lisika</span></a>
+    <nav class="nav" aria-label="Основная навигация">
       <a href="#cases">Кейсы</a>
       <a href="#process">Процесс</a>
+      <a href="#skills">Навыки</a>
       <a href="#contacts">Контакты</a>
     </nav>
   </header>
@@ -21,137 +28,190 @@
   <main id="top">
     <section class="hero section">
       <div class="hero-copy">
-        <p class="eyebrow">Москва · digital-дизайн · соцсети</p>
-        <h1>lisika<br><span>Лариса Киселёва</span></h1>
-        <p class="lead">Digital-дизайнер / дизайнер соцсетей. Превращаю тексты, интерфейсные скриншоты и сырые задачи в понятные визуалы для соцсетей.</p>
+        <p class="eyebrow">Лариса Киселёва · Москва</p>
+        <h1>Digital- и SMM-дизайнер для соцсетей и digital-коммуникаций</h1>
+        <p class="lead">Создаю визуалы для соцсетей и digital-коммуникаций: превращаю идеи в готовый продукт. Работаю с визуальной структурой, типографикой, цветом и смыслом — для меня важны не только красота, но и отклик клиента.</p>
         <div class="hero-actions">
-          <a class="button" href="#cases">Смотреть работы</a>
-          <a class="button ghost" href="mailto:misslisika@gmail.com">Написать</a>
+          <a class="button primary" href="#cases">Смотреть кейсы</a>
+          <a class="button secondary" href="https://t.me/murmulisik" target="_blank" rel="noreferrer">Написать в Telegram</a>
+        </div>
+        <div class="metrics" aria-label="Ключевые направления">
+          <div><strong>4</strong><span>направления в портфолио</span></div>
+          <div><strong>20+</strong><span>визуалов и карточек</span></div>
+          <div><strong>1</strong><span>продуктовый проект</span></div>
         </div>
       </div>
-      <div class="hero-card">
+      <aside class="hero-card" aria-label="Фото автора">
         <img src="images/profile.jpg" alt="Лариса Киселёва" />
-        <div class="glass-tag">content → structure → visual</div>
-      </div>
+        <div class="hero-card-caption">
+          <span>lisika</span>
+          <small>digital / SMM / content design</small>
+        </div>
+      </aside>
     </section>
 
-    <section class="about section compact">
-      <div class="section-title">
+    <section class="section about" id="about">
+      <div class="section-heading">
         <p class="eyebrow">Обо мне</p>
-        <h2>Делаю дизайн, который объясняет смысл</h2>
+        <h2>Помогаю брендам доносить свою мысль аудитории</h2>
       </div>
       <div class="about-grid">
-        <p>Я работаю с digital-контентом: постами, каруселями, сторис, UI-разборами и визуалами для Telegram. Часто задача начинается с текста, скриншота или комментария руководителя — я выделяю главное, выбираю формат и собираю аккуратный макет.</p>
-        <ul class="soft-list">
-          <li>соцсети и Telegram</li>
-          <li>UI-разборы функций</li>
-          <li>карусели и текстовые карточки</li>
-          <li>работа с AI-инструментами</li>
-        </ul>
+        <p>Моя работа начинается с идеи клиента. Я разбираю по полочкам каждую деталь, изучаю бренд и его историю, выбираю подходящие форматы, выстраиваю визуальную иерархию и довожу макет до публикационного вида.</p>
+        <p>В портфолио собраны работы для SportMioTempo: текстовые карусели, UI-разборы функций, посты об обновлениях системы и более креативные визуалы для соцсетей.</p>
       </div>
     </section>
 
-    <section class="stats section compact">
-      <div class="stat"><b>4</b><span>типа работ в портфолио</span></div>
-      <div class="stat"><b>10+</b><span>визуалов для SportMioTempo</span></div>
-      <div class="stat"><b>3080×3850</b><span>формат вертикальных постов</span></div>
+    <section class="section featured project-story" aria-label="О проекте SportMioTempo">
+      <div class="case-intro project-card-main">
+        <p class="eyebrow">Избранный проект</p>
+        <h2>SportMioTempo: визуальная система для соцсетей</h2>
+        <p>SportMioTempo — платформа для организации тренировочных сборов. В рамках проекта я оформляю посты о функциях системы, обновлениях, заявках, расписании, оплате и поддержке участников.</p>
+        <p>Моя задача — сделать сложные продуктовые темы понятными для аудитории: через крупную типографику, чистую композицию, реальные скриншоты интерфейса, фирменные цвета и короткие смысловые акценты.</p>
+      </div>
+      <div class="project-notes" aria-label="Что входит в проект">
+        <div><span>01</span><strong>Продуктовые посты</strong><p>Объясняю функции платформы простым визуальным языком.</p></div>
+        <div><span>02</span><strong>Карусели</strong><p>Разбиваю длинные тексты на понятные серии карточек.</p></div>
+        <div><span>03</span><strong>UI-разборы</strong><p>Превращаю интерфейсные скриншоты в аккуратные промо-материалы.</p></div>
+      </div>
     </section>
 
-    <section id="cases" class="section">
-      <div class="section-title wide">
+    <section class="section cases" id="cases">
+      <div class="section-heading narrow">
         <p class="eyebrow">Кейсы</p>
-        <h2>SportMioTempo: визуалы для спортивной платформы</h2>
-        <p>Основной проект в портфолио: посты о функциях системы, обновлениях, тренировочных сборах и пользе платформы для организаторов и участников.</p>
+        <h2>Лучшие работы</h2>
+        <p>Каждый кейс показывает отдельный навык: структурирование текста, работу с интерфейсом, серийность карточек и креативную подачу.</p>
       </div>
 
-      <article class="case feature-case">
+      <article class="case-block carousel-case">
+        <div class="case-layout">
         <div class="case-copy">
-          <span class="case-num">01</span>
+          <span class="case-number">01</span>
           <h3>Текстовая карусель: «В чём наше отличие?»</h3>
-          <p>Задача — упаковать позиционирование SportMioTempo в серию лаконичных карточек: комплексный подход, расписание, поддержка и единая платформа.</p>
+          <p class="case-meta">Формат: 5 карточек · соцсети · позиционирование</p>
+          <dl>
+            <div><dt>Задача</dt><dd>Упаковать длинный текст о преимуществах сервиса в короткую и понятную серию карточек.</dd></div>
+            <div><dt>Решение</dt><dd>Минималистичная типографика, фиолетово-жёлтые акценты, один главный смысл на карточку.</dd></div>
+            <div><dt>Результат</dt><dd>Позиционирование стало легче считываться: сервис объясняется через конкретные выгоды.</dd></div>
+          </dl>
         </div>
-        <div class="carousel-grid">
-          <img src="images/difference-1.jpg" alt="Карусель SportMioTempo 1" />
-          <img src="images/difference-2.jpg" alt="Карусель SportMioTempo 2" />
-          <img src="images/difference-3.jpg" alt="Карусель SportMioTempo 3" />
-          <img src="images/difference-4.jpg" alt="Карусель SportMioTempo 4" />
-          <img src="images/difference-5.jpg" alt="Карусель SportMioTempo 5" />
+        <div class="showcase work-row carousel-gallery square-gallery">
+          <img src="images/difference-1.jpg" alt="Карточка 1: В чём наше отличие" />
+          <img src="images/difference-2.jpg" alt="Карточка 2: Комплексный подход" />
+          <img src="images/difference-3.jpg" alt="Карточка 3: Расписание под тренировки" />
+          <img src="images/difference-4.jpg" alt="Карточка 4: Поддержка участников" />
+          <img src="images/difference-5.jpg" alt="Карточка 5: Всё в одной платформе" />
+        </div>
         </div>
       </article>
 
-      <article class="case split-case">
+      <article class="case-block reverse carousel-case">
+        <div class="case-layout">
         <div class="case-copy">
-          <span class="case-num">02</span>
+          <span class="case-number">02</span>
+          <h3>Обновлённая заявка на сборы</h3>
+          <p class="case-meta">Формат: серия карточек · продуктовая коммуникация</p>
+          <dl>
+            <div><dt>Задача</dt><dd>Показать, что новая заявка стала удобнее: график, группы, индивидуальные уроки, оплата и заметки.</dd></div>
+            <div><dt>Решение</dt><dd>На каждой карточке — крупный текст и реальный фрагмент интерфейса как доказательство функции.</dd></div>
+            <div><dt>Результат</dt><dd>Сложное обновление разложено на понятные шаги для участников.</dd></div>
+          </dl>
+        </div>
+        <div class="showcase work-grid carousel-gallery vertical-gallery">
+          <img src="images/system-update-1.jpg" alt="Обновлённая заявка: карточка 1" />
+          <img src="images/system-update-2.jpg" alt="Групповые занятия" />
+          <img src="images/system-update-3.jpg" alt="Индивидуальные уроки" />
+          <img src="images/system-update-4.jpg" alt="Оплата" />
+          <img src="images/system-update-5.jpg" alt="Заметки" />
+        </div>
+        </div>
+      </article>
+
+      <article class="case-block">
+        <div class="case-layout">
+        <div class="case-copy">
+          <span class="case-number">03</span>
           <h3>UI-разборы функций системы</h3>
-          <p>Показываю пользу продукта через реальные интерфейсные скриншоты: выноски, акценты, понятный заголовок и итоговая плашка.</p>
+          <p class="case-meta">Формат: продуктовые посты · интерфейс + выноски</p>
+          <dl>
+            <div><dt>Задача</dt><dd>Объяснить функции платформы через реальные экраны: выгрузки, расписание, уроки и корректировки.</dd></div>
+            <div><dt>Решение</dt><dd>Крупный скриншот, короткие выноски и итоговая плашка вместо длинных абзацев.</dd></div>
+            <div><dt>Результат</dt><dd>Функции выглядят не как «скрин из системы», а как понятные промо-материалы.</dd></div>
+          </dl>
         </div>
-        <div class="work-grid four">
-          <figure><img src="images/ui-export.jpg" alt="Выгрузка суммы заявок"><figcaption>Выгрузка суммы заявок</figcaption></figure>
-          <figure><img src="images/ui-schedule.jpg" alt="У каждого свой график"><figcaption>Индивидуальный график</figcaption></figure>
-          <figure><img src="images/ui-lessons.jpg" alt="Контроль уроков"><figcaption>Подсчёт уроков</figcaption></figure>
-          <figure><img src="images/ui-correction.jpg" alt="Корректировка расписания"><figcaption>Корректировка расписания</figcaption></figure>
+        <div class="showcase work-feature">
+          <img src="images/ui-export.jpg" alt="Выгрузка суммы заявок" />
+          <img src="images/ui-schedule.jpg" alt="Индивидуальный график для пары" />
+          <img src="images/ui-lessons.jpg" alt="Индивидуальные уроки" />
+          <img src="images/ui-correction.jpg" alt="Корректировка расписания" />
         </div>
-      </article>
-
-      <article class="case split-case reverse">
-        <div class="case-copy">
-          <span class="case-num">03</span>
-          <h3>Карусель об обновлении заявки</h3>
-          <p>Серия карточек объясняет, как участникам стало проще заполнять заявку: график, групповые занятия, индивидуальные уроки, оплата и заметки.</p>
-        </div>
-        <div class="work-grid five">
-          <img src="images/system-update-1.jpg" alt="Обновление системы 1">
-          <img src="images/system-update-2.jpg" alt="Обновление системы 2">
-          <img src="images/system-update-3.jpg" alt="Обновление системы 3">
-          <img src="images/system-update-4.jpg" alt="Обновление системы 4">
-          <img src="images/system-update-5.jpg" alt="Обновление системы 5">
         </div>
       </article>
 
-      <article class="case split-case creative">
+      <article class="case-block reverse">
+        <div class="case-layout">
         <div class="case-copy">
-          <span class="case-num">04</span>
-          <h3>Креативные посты и нестандартные форматы</h3>
-          <p>Когда стандартный шаблон не подходит, делаю отдельную визуальную концепцию под тему: сезонность, настроение, динамика и эмоциональный акцент.</p>
+          <span class="case-number">04</span>
+          <h3>Креативные и сезонные посты</h3>
+          <p class="case-meta">Формат: нестандартные визуалы · эмоциональная коммуникация</p>
+          <dl>
+            <div><dt>Задача</dt><dd>Сделать посты живее стандартного шаблона, но сохранить связь с брендом.</dd></div>
+            <div><dt>Решение</dt><dd>Сезонные образы, крупные заголовки, мягкие фоны и аккуратная композиция.</dd></div>
+            <div><dt>Результат</dt><dd>Визуалы работают как поддержка аудитории и как брендовая коммуникация.</dd></div>
+          </dl>
         </div>
-        <div class="work-grid three">
-          <figure><img src="images/creative-may-june.jpg" alt="Май-июнь: план выживания"><figcaption>План выживания для чемпионов</figcaption></figure>
-          <figure><img src="images/creative-summer.jpg" alt="Лето — время сборов"><figcaption>Лето — время сборов</figcaption></figure>
-          <figure><img src="images/smt-help.jpg" alt="Мы рядом"><figcaption>Не успеваете с организацией?</figcaption></figure>
+        <div class="showcase creative-feature two-images">
+          <img src="images/creative-may-june.jpg" alt="Май-июнь: План выживания для чемпионов" />
+          <img src="images/creative-summer.jpg" alt="Лето — время сборов" />
+        </div>
         </div>
       </article>
     </section>
 
-    <section id="process" class="section process">
-      <div class="section-title">
-        <p class="eyebrow">Как я работаю</p>
-        <h2>От сырого текста до готового визуала</h2>
+    <section class="section process" id="process">
+      <div class="section-heading narrow">
+        <p class="eyebrow">Процесс</p>
+        <h2>Как я работаю с задачей</h2>
       </div>
       <div class="steps">
-        <div><b>01</b><h3>Разбираю задачу</h3><p>Смотрю текст, скрины, комментарии и понимаю, что нужно донести.</p></div>
-        <div><b>02</b><h3>Выбираю формат</h3><p>Пост, карусель, UI-разбор, новость или отдельный креативный формат.</p></div>
-        <div><b>03</b><h3>Собираю структуру</h3><p>Выделяю главное, убираю лишнее, строю сетку и визуальную иерархию.</p></div>
-        <div><b>04</b><h3>Довожу до публикации</h3><p>Работаю с правками, читаемостью, цветами и финальным настроением.</p></div>
+        <div><span>01</span><h3>Разбираю вводные</h3><p>Текст, скриншоты, комментарии руководителя и формат публикации.</p></div>
+        <div><span>02</span><h3>Выделяю главное</h3><p>Сокращаю материал до одного сообщения и нескольких смысловых блоков.</p></div>
+        <div><span>03</span><h3>Собираю визуальную систему</h3><p>Композиция, типографика, цвета, скриншоты и акценты работают вместе.</p></div>
+        <div><span>04</span><h3>Довожу по правкам</h3><p>Проверяю читаемость, соответствие стилю и аккуратность деталей.</p></div>
       </div>
     </section>
 
-    <section class="section tools compact">
-      <div class="section-title"><p class="eyebrow">Инструменты</p><h2>Figma · Canva · Photoshop · AI</h2></div>
-      <p>Использую AI как рабочий инструмент: для идей, промтов, вариантов подачи и ускорения визуального процесса. Финальное решение всегда собираю с фокусом на задачу, бренд и читаемость.</p>
+    <section class="section skills" id="skills">
+      <div class="section-heading narrow">
+        <p class="eyebrow">Навыки</p>
+        <h2>Что я умею</h2>
+      </div>
+      <div class="skill-grid">
+        <div><h3>Дизайн соцсетей</h3><p>Посты, карусели, сторис, обложки и визуальные серии.</p></div>
+        <div><h3>Контент-дизайн</h3><p>Структурирование текста, смысловые блоки, визуальная иерархия.</p></div>
+        <div><h3>UI-разборы</h3><p>Оформление интерфейсных скриншотов в понятные продуктовые посты.</p></div>
+        <div><h3>AI-assisted design</h3><p>Промты, генерация идей, доработка визуалов и поиск композиции.</p></div>
+      </div>
+      <p class="tools">Figma · Canva · Adobe Photoshop · Adobe Illustrator · AI-инструменты</p>
     </section>
 
-    <section id="contacts" class="section contact">
-      <p class="eyebrow">Контакты</p>
-      <h2>Открыта к задачам по digital-дизайну и визуальной упаковке контента</h2>
-      <div class="contact-links">
+    <section class="section contact" id="contacts">
+      <div>
+        <p class="eyebrow">Контакты</p>
+        <h2>Готова обсудить проект или тестовое задание</h2>
+      </div>
+      <div class="contact-card">
+        <a href="https://t.me/murmulisik" target="_blank" rel="noreferrer">Telegram: @murmulisik</a>
         <a href="mailto:misslisika@gmail.com">misslisika@gmail.com</a>
-        <a href="https://t.me/murmulisik">@murmulisik</a>
-        <span>Москва</span>
+        <span>Москва · удалённо / гибрид</span>
       </div>
     </section>
   </main>
 
-  <footer>© lisika / Лариса Киселёва</footer>
+  <footer class="footer">
+    <span>© lisika / Лариса Киселёва</span>
+    <a href="#top">Наверх ↑</a>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
